@@ -49,13 +49,13 @@ return result
  *  //> 96
  */
 function getHighestMetascore(movies) {
-  const highestScore = 0 ;
-  const score = movies[0]; 
+  let highestScore = 0 ;
+  let score = movies[0]; 
   if(!movies.length) {
     return 0;
   }
-  for (const movie of movies) {
-    if(score.metascore <= movie.metascore){
+  for (let movie of movies) {
+    if(score.metascore <= movie.metascore) {
       highestScore = Number(movie.metascore) 
     }
   }
