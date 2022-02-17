@@ -98,19 +98,18 @@ function getAverageIMDBRating(movies) {
  *  //> { G: 3, PG: 7 }
  */
 function countByRating(movies) {
- function findcount(random){
-   let min = random[0]
- for(let count of random){
-   if(min.rated >count.rated){
-     min = rated
-   }
+ countby = []
+ count = movies[0] 
+ let sum = 0 
+ if (!movies.length){
+   return []
  }
-  }
-  countby = []
-  for(let i=0; i< movies.length; i ++ ){
-    if(movies[i].rated >= same){
-    } 
-  }
+ for(let movie of movies){
+   if (movie.rated.includes(G,PG,))
+   return sum += Number(movie.rated)
+ }
+  
+  
 return countby
 }
 
