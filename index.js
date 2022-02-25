@@ -103,11 +103,9 @@ for(let movie of movies)
   if(result[movie.rated])
 {
 result[movie.rated] += 1
-} else {
-result[movie.rated] = 1}
-
+} else {result[movie.rated] = 1
 }
-   
+}   
 return result
 }
  //should return an object where the keys are ratings and the values are the number of movies with that rating 
@@ -162,7 +160,7 @@ function filterByGenre(movies, genre) {
   for (let movie of movies){
   if (movie.genre.toLowerCase().includes(genre.toLowerCase())){
   film.push(movie);
-  } 
+  } // used .tolowercase since was case sensitive 
   
   }
   return film;
